@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
         btnOpenCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(TAG, "onClick: button click");
                 openCamera();
             }
         });
