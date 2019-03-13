@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
         if (EasyPermissions.hasPermissions(this,perms)){
           //  Toast.makeText(this, "Camera Permission done", Toast.LENGTH_SHORT).show();
         }else {
+            Log.i(TAG, "openCamera: ");
             EasyPermissions.requestPermissions(this,"we need to permission open this app",123,perms);
         }
 
